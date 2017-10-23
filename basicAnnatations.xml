@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="basicAnnatations">
+<test name="annataions">
+<classes>
+<!-- <class name="TestNGEx.AllAnnatations"></class> -->
+</classes>
+</test>
+<test name="groupstest1">
+<groups>
+<run>
+<include name="sanity"></include>
+</run>
+</groups>
+<classes>
+<class name="TestNGEx.GroupsTest"></class>
+</classes>
+</test>
+
+
+<parameter name="userName" value="user01"></parameter>
+<parameter name="password" value="pass1234"></parameter>
+<test name="parametersTest">
+<classes>
+<class name="TestNGEx.ParametersXML"></class>
+</classes>
+</test>
+
+<parameter name="userName" value="user01"></parameter>
+<parameter name="password" value="pass1234"></parameter>
+<test name="parametersTest1">
+<classes>
+<class name="TestNGEx.ParametersXML"></class>
+</classes>
+</test>
+
+</suite>
