@@ -3,12 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Grid.GridEx">
+      <class name="TestNGEx.HRMApplyLeave">
         <methods>
-          <include name="testFF"/>
-          <include name="testchrome"/>
+          <include name="AnnualLeave"/>
+          <include name="PersonalLeave"/>
+          <include name="LoginHRM"/>
+          <include name="BS"/>
+          <include name="BT"/>
         </methods>
-      </class> <!-- Grid.GridEx -->
+      </class> <!-- TestNGEx.HRMApplyLeave -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

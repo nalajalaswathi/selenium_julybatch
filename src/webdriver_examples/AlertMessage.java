@@ -20,7 +20,7 @@ public class AlertMessage {
 		driver.findElement(By.xpath("html/body/form/table/tbody/tr[3]/td[2]/input[1]")).click();
 		
 		//switch to alert message
-		Alert alertmsz = driver.switchTo().alert();
+		 Alert alertmsz = driver.switchTo().alert();
 		System.out.println("alermessge is:-");
 		System.out.println(alertmsz.getText());
 		

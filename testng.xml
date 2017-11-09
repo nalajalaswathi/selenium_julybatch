@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" verbose="1" name="Suite" parallel="methods">
+<suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="TestNGEx.ParalleleExecution"/>
+      <class name="BatchFileExecution.TestB"/>
+      <class name="BatchFileExecution.TestA"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

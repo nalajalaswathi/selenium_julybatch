@@ -1,5 +1,6 @@
 package webdriver_examples;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -33,7 +34,7 @@ public class SelectMenuOption
 		driver.findElement(By.id("menu_leave_viewMyLeaveList")).click();
 		
 		//table rows count in myleave tab
-		List<WebElement> trows = driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr"));
+		List<WebElement> trows = driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr/td"));
 		int r = trows.size();
 		System.out.println("table row count is:" + r);
 		
@@ -41,14 +42,16 @@ public class SelectMenuOption
 		List<WebElement> tcols = driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr[5]/td"));
 		int c = tcols.size();
 		System.out.println("table column count is:" + c);
-		
+				
 		//table all columns count in myleave tab
 		List<WebElement> allcols = driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr/td"));
 		int tallcols = allcols.size();
 		System.out.println("table allcolumn count is:" + tallcols);
-		
+				
 		//display particular cell value(1st row 6th col-cell lvalue)
 		String cel_val = driver.findElement(By.xpath("//*[@id='resultTable']/tbody/tr[1]/td[6]")).getText();
 		System.out.println("1st row 6th col cell value is:" + cel_val);		
+			
+		
 	}
 }
