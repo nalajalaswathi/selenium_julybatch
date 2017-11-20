@@ -38,6 +38,14 @@ public class SelectMenuOption
 		int r = trows.size();
 		System.out.println("table row count is:" + r);
 		
+		/*
+		Iterator<WebElement> itr = trows.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next().getText());
+		}
+		*/
+		
 		//table 5th row columns count in myleave tab
 		List<WebElement> tcols = driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr[5]/td"));
 		int c = tcols.size();
@@ -50,7 +58,8 @@ public class SelectMenuOption
 				
 		//display particular cell value(1st row 6th col-cell lvalue)
 		String cel_val = driver.findElement(By.xpath("//*[@id='resultTable']/tbody/tr[1]/td[6]")).getText();
-		System.out.println("1st row 6th col cell value is:" + cel_val);		
+		System.out.println("1st row 6th col cell value is:" + cel_val);	
+		
 			
 		
 	}

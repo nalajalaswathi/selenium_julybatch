@@ -1,5 +1,6 @@
 package webdriver_examples;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,15 @@ public class GetLink {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		List<WebElement> links = driver.findElements(By.tagName("a"));
+		
+		/*//To itarate list of elements
+		Iterator<WebElement> itr = links.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next().getText());
+		}
+		*/
+		
 		int n = links.size();
 		System.out.println(n);
 		for(int i=0;i<n;i++)
@@ -23,6 +33,7 @@ public class GetLink {
 			String txt=links.get(i).getText();
 			System.out.println(txt);
 		}
+		
 	}
 
 }
