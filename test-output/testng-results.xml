@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Default suite]" duration-ms="83" started-at="2017-11-15T03:44:55Z" finished-at="2017-11-15T03:44:55Z">
+  <suite name="Default suite" duration-ms="18578" started-at="2017-11-20T09:37:49Z" finished-at="2017-11-20T09:38:08Z">
     <groups>
     </groups>
-    <test name="Default test(failed)" duration-ms="83" started-at="2017-11-15T03:44:55Z" finished-at="2017-11-15T03:44:55Z">
-      <class name="FailedScriptsExecution.testcase3">
-        <test-method status="FAIL" signature="testWordpress()[pri:0, instance:FailedScriptsExecution.testcase3@475530b9]" name="testWordpress" duration-ms="38" started-at="2017-11-15T09:14:55Z" finished-at="2017-11-15T09:14:55Z">
+    <test name="Default test" duration-ms="18578" started-at="2017-11-20T09:37:49Z" finished-at="2017-11-20T09:38:08Z">
+      <class name="ListnersDemo.MyFirstTestCase">
+        <test-method status="PASS" signature="googleverify()[pri:0, instance:ListnersDemo.MyFirstTestCase@7c16905e]" name="googleverify" duration-ms="18518" started-at="2017-11-20T15:07:49Z" finished-at="2017-11-20T15:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleverify -->
+        <test-method status="FAIL" signature="test2()[pri:0, instance:ListnersDemo.MyFirstTestCase@7c16905e]" name="test2" duration-ms="11" started-at="2017-11-20T15:08:08Z" finished-at="2017-11-20T15:08:08Z">
           <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at FailedScriptsExecution.testcase3.testWordpress(testcase3.java:11)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at ListnersDemo.MyFirstTestCase.test2(MyFirstTestCase.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -44,8 +52,8 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWordpress -->
-      </class> <!-- FailedScriptsExecution.testcase3 -->
-    </test> <!-- Default test(failed) -->
-  </suite> <!-- Failed suite [Default suite] -->
+        </test-method> <!-- test2 -->
+      </class> <!-- ListnersDemo.MyFirstTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
